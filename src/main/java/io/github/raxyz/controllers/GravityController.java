@@ -16,9 +16,9 @@ public class GravityController {
 
     @RequestMapping("/{id}")
     public String greeting(@PathVariable String id) {
-//        if (id == null) {
-//            id = "";
-//        }
+        if (id == null) {
+            id = "";
+        }
         return String.format("Greetings %s from Gravity Falls!", id);
     }
 
